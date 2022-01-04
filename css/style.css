@@ -1,0 +1,196 @@
+body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-color: hsl(0, 0%, 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    Font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    padding: 4rem;
+}
+
+h1 {
+    width: 300px;
+    font-size: 35px;
+    color: hsl(300, 43%, 22%);
+}
+
+h5 {
+    display: inline;
+    position: relative;
+    left: .8rem;
+    bottom: .2rem;
+    color: hsl(300, 43%, 22%);
+}
+
+p {
+    color: hsl(303, 10%, 53%);
+}
+
+.card {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+
+.first-row {
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+.review {
+    flex: 50%;
+
+}
+
+.line {
+    width: 400px;
+}
+
+.second-row {
+    display: grid;
+    gap: .8rem;
+    flex: 50%;
+    justify-content: space-around;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    background-color: hsl(300, 24%, 96%);
+    padding: .8rem;
+    grid-column: 1;
+    height: 20px;
+    border-radius: .6rem;
+}
+
+.card-2 {
+    padding-right: 25px;
+    position: relative;
+    left: 2rem;
+}
+
+.card-3 {
+    position: relative;
+    left: 4rem;
+}
+
+.third-row {
+    grid-row: 2;
+    display: grid;
+    padding: 0 100px 50px;
+    justify-content: space-around;
+
+}
+
+.colton,
+.irene,
+.anne {
+    background-color: hsl(300, 43%, 22%);
+    padding: 1.2rem;
+    grid-row: 1;
+    text-align: center;
+    max-width: 280px;
+    border-radius: .6rem;
+}
+
+.irene {
+    position: relative;
+    top: 1rem;
+}
+
+.anne {
+    position: relative;
+    top: 2.5rem;
+}
+
+
+.colton-i,
+.irene-i,
+.anne-i {
+    max-width: 1.7rem;
+    float: left;
+    border-radius: 2rem;
+}
+
+.name {
+    color: hsl(300, 24%, 96%);
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: .1rem;
+}
+
+.v {
+    color: hsl(333, 80%, 67%);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.name-1,
+.name-2,
+.name-3 {
+    display: grid;
+    gap: 2px;
+    text-align: left;
+    position: relative;
+    left: .8rem;
+    bottom: .2rem;
+}
+
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(283, 42%, 42%);
+    text-decoration: none;
+}
+
+@media (max-width:1080px) {
+    .review {
+        flex: 100%;
+    }
+
+    .second-row {
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        flex: 100%;
+        width: 50%;
+        border-radius: .6rem;
+        position: inherit;
+    }
+
+    .card-2 {
+        padding-right: .8rem;
+    }
+
+    .third-row {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+       
+    }
+
+    .attribution {
+        padding-top: 4rem;
+        max-width: 100%;
+        text-align: start;
+    }
+    .attribution a {   display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
